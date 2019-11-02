@@ -24,10 +24,11 @@
     "eslint": "^6.6.0"
   },
   "dependencies": {}
-}
-"bin": {
+
+ "bin": {
  "brain-games": "dist/bin/brain-games.js"
-}
-"files": [
+ }
+ "files": [
     "dist"
   ],
+}
