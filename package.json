@@ -1,0 +1,33 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "brain-games.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marazmatique/project-lvl1-s486.git"
+  },
+  "author": "marazmatique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marazmatique/project-lvl1-s486/issues"
+  },
+  "homepage": "https://github.com/marazmatique/project-lvl1-s486#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.6.0"
+  },
+  "dependencies": {}
+}
+"bin": {
+ "brain-games": "dist/bin/brain-games.js"
+}
+"files": [
+    "dist"
+  ],

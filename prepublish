@@ -1,0 +1,1 @@
+"prepublishOnly": "npm run build"
