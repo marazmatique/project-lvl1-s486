@@ -5,8 +5,7 @@ start:
 	npx babel-node src/bin/brain-games.js
 
 publish:
-	npm publish
-	publish --dry-run
+	npm publish --dry-run
 
 build:
 	NODE_ENV=production babel src --out-dir dist --source-maps inline
