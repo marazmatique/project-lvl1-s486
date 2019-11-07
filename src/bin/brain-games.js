@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import half from '..';
+import { name } from '../index';
 
 const answer = "ghhhhhhhhhh";
 

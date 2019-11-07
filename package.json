@@ -1,5 +1,5 @@
 {
-  "name": "Marazmatique",
+  "name": "marazmatique",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -33,6 +33,6 @@
     "brain-games": "dist/bin/brain-games.js"
   },
   "dependencies": {
-    "marazmatique": "^1.0.0"
+    "marazmatique": "^1.0.1"
   }
 }
