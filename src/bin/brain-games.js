@@ -2,4 +2,5 @@
 
 import { name } from '../index';
 
-console.log(name(2));
+const answer = name(2);
+console.log(${answer});
