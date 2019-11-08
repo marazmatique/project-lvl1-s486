@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { name } from '../index';
+import { userName } from '..';
 
-const answer = name(2);
-console.log(${answer});
+userName();

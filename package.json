@@ -1,5 +1,5 @@
 {
-  "name": "marazmatique",
+  "name": "brain-games_by_Marazmatique",
   "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
@@ -24,6 +24,7 @@
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
     "eslint": "^6.6.0",
+    "marazmatique": "^1.0.3",
     "readline-sync": "^1.4.10"
   },
   "files": [
