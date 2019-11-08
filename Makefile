@@ -7,5 +7,7 @@ start:
 publish:
 	npm publish --dry-run
 
-eslint:
-	npx eslint
+lint:
+	npx eslint .
+
+.PHONY: test
