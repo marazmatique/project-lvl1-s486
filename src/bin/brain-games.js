@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-import { userName } from '..';
+import { gamePlay } from '..';
 
-console.log();
-console.log('Welcome to the Brain Games!');
-console.log();
-userName();
+gamePlay(3);
