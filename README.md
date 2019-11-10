@@ -5,7 +5,7 @@
 
 **How to install from npm (npm install marazmatique).**
 _Use sudo if you have err permission denied._
-[![asciicast](https://asciinema.org/a/XLOcmb6J6XE0Oh0Co6sMsPxry.svg)](https://asciinema.org/a/XLOcmb6J6XE0Oh0Co6sMsPxry)
+[![asciicast](https://asciinema.org/a/MPt0QWzQyEhxfOuB63nA9U0Bl.svg)](https://asciinema.org/a/MPt0QWzQyEhxfOuB63nA9U0Bl)
 
 **You're can play on 'Brain Games' everywhere in your shell, by just run comand 'brain-games'.**
-[![asciicast](https://asciinema.org/a/280329.svg)](https://asciinema.org/a/280329)
+[![asciicast](https://asciinema.org/a/fEvhA0BzvW1Sfk9Ln2JjCDj5O.svg)](https://asciinema.org/a/fEvhA0BzvW1Sfk9Ln2JjCDj5O)
