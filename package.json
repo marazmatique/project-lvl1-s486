@@ -34,8 +34,8 @@
     "dist"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-games.js"
+    "brain-calc": "dist/bin/brain-games-calc.js",
+    "brain-even": "dist/bin/brain-games-even.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
