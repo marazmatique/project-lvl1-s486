@@ -15,3 +15,6 @@ _Use sudo if you have err permission denied._
 
 **Another one option game - 'brain-gcd'**
 [![asciicast](https://asciinema.org/a/hE37HNWUbtKGyyEoCAT1XuKH2.svg)](https://asciinema.org/a/hE37HNWUbtKGyyEoCAT1XuKH2)
+
+**And one more game! Just insert command 'brain-prog'**
+[![asciicast](https://asciinema.org/a/3W3az7CmIkzm392KpVb6GV86U.svg)](https://asciinema.org/a/3W3az7CmIkzm392KpVb6GV86U)

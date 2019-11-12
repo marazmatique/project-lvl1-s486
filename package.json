@@ -34,6 +34,7 @@
     "dist"
   ],
   "bin": {
+    "brain-prog": "dist/bin/brain-games-progression.js",
     "brain-gcd": "dist/bin/brain-games-gcd.js",
     "brain-calc": "dist/bin/brain-games-calc.js",
     "brain-even": "dist/bin/brain-games-even.js"
