@@ -12,3 +12,6 @@ _Use sudo if you have err permission denied._
 
 **Also you can play optional game, by launch 'brain-calc'.**
 [![asciicast](https://asciinema.org/a/cx19lPfxPUeF7fVdiAhRoaEvS.svg)](https://asciinema.org/a/cx19lPfxPUeF7fVdiAhRoaEvS)
+
+**Another one option game - 'brain-gcd'**
+[![asciicast](https://asciinema.org/a/hE37HNWUbtKGyyEoCAT1XuKH2.svg)](https://asciinema.org/a/hE37HNWUbtKGyyEoCAT1XuKH2)

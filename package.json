@@ -1,6 +1,6 @@
 {
   "name": "marazmatique",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -34,6 +34,7 @@
     "dist"
   ],
   "bin": {
+    "brain-gcd": "dist/bin/brain-games-gcd.js",
     "brain-calc": "dist/bin/brain-games-calc.js",
     "brain-even": "dist/bin/brain-games-even.js"
   },

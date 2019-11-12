@@ -7,6 +7,9 @@ calc:
 even:
 	npx babel-node 'src/bin/brain-games-even.js'
 
+gcd:
+	npx babel-node 'src/bin/brain-games-gcd.js'
+
 publish:
 	npm publish --dry-run
 
