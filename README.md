@@ -9,3 +9,6 @@ _Use sudo if you have err permission denied._
 
 **You're can play on 'Brain Games' everywhere in your shell, by just run comand 'brain-games'.**
 [![asciicast](https://asciinema.org/a/fEvhA0BzvW1Sfk9Ln2JjCDj5O.svg)](https://asciinema.org/a/fEvhA0BzvW1Sfk9Ln2JjCDj5O)
+
+**Also you can play optional game, by launch 'brain-calc'.**
+[![asciicast](https://asciinema.org/a/cx19lPfxPUeF7fVdiAhRoaEvS.svg)](https://asciinema.org/a/cx19lPfxPUeF7fVdiAhRoaEvS)
