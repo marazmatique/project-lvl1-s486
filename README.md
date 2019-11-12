@@ -18,3 +18,6 @@ _Use sudo if you have err permission denied._
 
 **And one more game! Just insert command 'brain-prog'**
 [![asciicast](https://asciinema.org/a/3W3az7CmIkzm392KpVb6GV86U.svg)](https://asciinema.org/a/3W3az7CmIkzm392KpVb6GV86U)
+
+**Well, now with thrill we add the final version of our game!**
+[![asciicast](https://asciinema.org/a/kQgb1KSyqbs0WUPXvmZGbHUHI.svg)](https://asciinema.org/a/kQgb1KSyqbs0WUPXvmZGbHUHI)

@@ -13,6 +13,9 @@ gcd:
 progres:
 	npx babel-node 'src/bin/brain-games-progression.js'
 
+prime:
+	npx babel-node 'src/bin/brain-games-prime.js'
+
 publish:
 	npm publish --dry-run
 

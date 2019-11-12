@@ -34,6 +34,7 @@
     "dist"
   ],
   "bin": {
+    "brain-prime": "dist/bin/brain-games-prime.js",
     "brain-prog": "dist/bin/brain-games-progression.js",
     "brain-gcd": "dist/bin/brain-games-gcd.js",
     "brain-calc": "dist/bin/brain-games-calc.js",
