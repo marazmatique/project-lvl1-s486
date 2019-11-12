@@ -1,39 +1,32 @@
 import readlineSync from 'readline-sync';
 
-const gameHello = 'Welcome to the Brain Games!';
-const gameRules = 'Answer "yes" if number even otherwise answer "no".';
+import { expression, answer } from './makeConstructor';
 
-export const userName = () => readlineSync.question('What is your name? ');
-
-export const userAnswer = (randomNumber) => {
-  console.log(`Question: ${randomNumber}`);
-  return readlineSync.question('Your answer: ');
-};
-
-export const getRandomInt = (min = 1, max = 100) => Math.floor(Math.random()
+export const getRandomInt = (min, max) => Math.floor(Math.random()
 * (max - min + 1)) + min;
 
-export const gamePlay = (numberOfRound) => {
+export const gamePlay = (game) => {
   console.log();
-  console.log(gameHello);
-  console.log(gameRules);
+  console.log(game.welcome);
+  console.log(game.rules);
   console.log();
-  const name = userName();
-  console.log(`Hello, ${name}!`);
-  console.log();
-  for (let i = 1; i <= numberOfRound; i += 1) {
-    const digit = getRandomInt();
-    const correctAnswer = digit % 2 === 0 ? 'yes' : 'no';
-    const answer = userAnswer(digit);
-    if (correctAnswer !== answer) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
+  const userName = readlineSync.question('What is your name? ');
+  console.log(`Hello, ${userName}!`);
+  for (let i = 1; i <= 3; i += 1) {
+    const round = game.randomOperation();
+    console.log();
+    console.log(`Question: ${expression(round)}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (`${answer(round)}` !== userAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer(round)}'.`);
+      console.log();
+      console.log(`Let's try again, ${userName}!`);
       console.log();
       break;
     }
-    if (i === numberOfRound) {
+    if (i === 3) {
       console.log();
-      console.log(`Congratulation, ${name}!`);
+      console.log(`Congratulation, ${userName}!`);
       console.log();
       break;
     }
