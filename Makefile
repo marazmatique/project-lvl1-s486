@@ -10,7 +10,7 @@ even:
 gcd:
 	npx babel-node 'src/bin/brain-games-gcd.js'
 
-progres:
+prog:
 	npx babel-node 'src/bin/brain-games-progression.js'
 
 prime:
