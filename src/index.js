@@ -1,9 +1,5 @@
 import readlineSync from 'readline-sync';
-
 import { expression, answer } from './makeConstructor';
-
-export const getRandomInt = (min, max) => Math.floor(Math.random()
-* (max - min + 1)) + min;
 
 export const gamePlay = (game) => {
   console.log();
@@ -33,3 +29,4 @@ export const gamePlay = (game) => {
     console.log('Correct!');
   }
 };
+export default gamePlay;
