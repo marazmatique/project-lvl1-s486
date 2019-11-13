@@ -1,7 +1,8 @@
 {
   "name": "marazmatique",
   "version": "1.1.1",
-  "description": "",
+  "description": "this is packadge for install and run Brain Games on your $shel",
+  "keywords": ["Brain-Games", "Brain", "Game"],
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
