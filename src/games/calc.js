@@ -1,5 +1,6 @@
 import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
+import gamePlay from '../gamePlay';
 
 export const welcome = 'Welcome to the Brain Games!';
 
@@ -17,3 +18,5 @@ export const randomOperation = (num1 = getRandomInt(1, 25), num2 = getRandomInt(
       return 'somthing wrong';
   }
 };
+
+export default () => gamePlay(welcome, rules, randomOperation);

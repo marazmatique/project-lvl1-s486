@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { gamePlay } from '..';
-import * as prime from '../games/prime';
-import '../makeConstructor';
+import getStarted from '../games/prime';
 
-gamePlay(prime);
+getStarted();

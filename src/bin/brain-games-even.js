@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { gamePlay } from '..';
-import * as even from '../games/even';
-import '../makeConstructor';
+import getStarted from '../games/even';
 
-gamePlay(even);
+getStarted();

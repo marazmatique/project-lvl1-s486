@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { gamePlay } from '..';
-import * as calc from '../games/calc';
-import '../makeConstructor';
+import getStarted from '../games/calc';
 
-gamePlay(calc);
+getStarted();

@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { gamePlay } from '..';
-import * as progression from '../games/progression';
-import '../makeConstructor';
+import getStarted from '../games/progression';
 
-gamePlay(progression);
+getStarted();
