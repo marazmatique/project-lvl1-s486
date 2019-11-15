@@ -1,6 +1,6 @@
 import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
-import gamePlay from '../gamePlay';
+import gamePlay from '..';
 
 export const welcome = 'Welcome to the Brain Games!';
 
