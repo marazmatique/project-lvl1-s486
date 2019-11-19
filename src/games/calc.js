@@ -16,6 +16,17 @@ export const choiseRandomFromList = (list = operList) => {
 };
 
 export const randomOperation = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25), oper =
-choiseRandomFromList()) => make(`${num1} ${oper} ${num2}`, eval(`${num1} ${oper} ${num2}`));
+choiseRandomFromList()) => {
+  switch (oper) {
+    case '+':
+      return make(`${num1} + ${num2}`, num1 + num2);
+    case '-':
+      return make(`${num1} - ${num2}`, num1 - num2);
+    case '*':
+      return make(`${num1} * ${num2}`, num1 * num2);
+    default:
+      return 'somthing wrong';
+  }
+};
 
 export default () => gamePlay(welcome, rules, randomOperation);
