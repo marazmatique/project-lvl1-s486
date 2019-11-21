@@ -2,8 +2,6 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const welcome = 'Welcome to the Brain Games!';
-
 export const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const randomOperation = (num = getRandomInt(1, 100)) => {
@@ -17,4 +15,4 @@ export const randomOperation = (num = getRandomInt(1, 100)) => {
   return make(num, answer);
 };
 
-export default () => gamePlay(welcome, rules, randomOperation);
+export default () => gamePlay(rules, randomOperation);

@@ -2,8 +2,6 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const welcome = 'Welcome to the Brain Games!';
-
 export const rules = 'What is the result of the expression?';
 
 export const operList = '+-*';
@@ -29,4 +27,4 @@ choiseRandomFromList()) => {
   }
 };
 
-export default () => gamePlay(welcome, rules, randomOperation);
+export default () => gamePlay(rules, randomOperation);

@@ -1,9 +1,8 @@
 import readlineSync from 'readline-sync';
 import { expression, answer } from './makeConstructor';
 
-export default (welcome, rules, randomOperation) => {
-  console.log();
-  console.log(welcome);
+export default (rules, randomOperation) => {
+  console.log('\nWelcome to the Brain Games!');
   console.log(rules);
   const userName = readlineSync.question('\nWhat is your name? ');
   console.log(`Hello, ${userName}!`);

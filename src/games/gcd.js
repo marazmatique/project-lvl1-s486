@@ -2,8 +2,6 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const welcome = 'Welcome to the Brain Games!';
-
 export const rules = 'Find the greatest common divisor of given numbers.';
 
 const finderGcd = (a, b) => {
@@ -17,4 +15,4 @@ const finderGcd = (a, b) => {
 export const randomOperation = (num1 = getRandomInt(1, 100), num2 = getRandomInt(1, 100)) => make(`${num1} ${num2}`,
   finderGcd(num1, num2));
 
-export default () => gamePlay(welcome, rules, randomOperation);
+export default () => gamePlay(rules, randomOperation);
