@@ -1,25 +1,21 @@
 import readlineSync from 'readline-sync';
 import { expression, answer } from './makeConstructor';
 
-export default (rules, randomOperation) => {
+export default (description, randomOperation) => {
+  const roundNumber = 3;
   console.log('\nWelcome to the Brain Games!');
-  console.log(rules);
+  console.log(description);
   const userName = readlineSync.question('\nWhat is your name? ');
   console.log(`Hello, ${userName}!`);
-  for (let i = 1; i <= 3; i += 1) {
+  for (let i = 1; i <= roundNumber; i += 1) {
     const round = randomOperation();
     console.log(`\nQuestion: ${expression(round)}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (`${answer(round)}` !== userAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer(round)}'.`);
-      console.log(`\nLet's try again, ${userName}!\n`);
-      break;
-    }
-    if (i === 3) {
-      console.log('Correct!');
-      console.log(`\nCongratulation, ${userName}!\n`);
-      break;
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer(round)}'.
+      \nLet's try again, ${userName}!\n`);
     }
     console.log('Correct!');
   }
+  return console.log(`\nCongratulation, ${userName}!\n`);
 };
