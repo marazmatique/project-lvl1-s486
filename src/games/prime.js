@@ -2,17 +2,20 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const randomOperation = (num = getRandomInt(1, 100)) => {
-  let answer = num === 1 ? 'no' : 'yes';
+export const isPrime = (num) => {
   for (let denom = 2; denom <= Math.sqrt(num); denom += 1) {
     if (num % denom === 0) {
-      answer = 'no';
-      break;
+      return 'no';
     }
   }
-  return make(num, answer);
+  return 'yes';
 };
 
-export default () => gamePlay(rules, randomOperation);
+export const question = (num) => `${num}`;
+export const answer = (num) => isPrime(num);
+
+export const randomOperation = (num = getRandomInt(1, 100)) => make(question(num), answer(num));
+
+export default () => gamePlay(description, randomOperation);

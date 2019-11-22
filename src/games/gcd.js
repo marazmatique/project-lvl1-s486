@@ -2,9 +2,9 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const rules = 'Find the greatest common divisor of given numbers.';
+export const description = 'Find the greatest common divisor of given numbers.';
 
-const finderGcd = (a, b) => {
+const findGcd = (a, b) => {
   let answer = Math.min(a, b);
   while (a % answer !== 0 || b % answer !== 0) {
     answer -= 1;
@@ -12,7 +12,10 @@ const finderGcd = (a, b) => {
   return answer;
 };
 
-export const randomOperation = (num1 = getRandomInt(1, 100), num2 = getRandomInt(1, 100)) => make(`${num1} ${num2}`,
-  finderGcd(num1, num2));
+export const question = (num1, num2) => `${num1} ${num2}`;
+export const answer = (num1, num2) => findGcd(num1, num2);
 
-export default () => gamePlay(rules, randomOperation);
+export const randomOperation = (num1 = getRandomInt(1, 100), num2 = getRandomInt(1, 100)) => (
+  make(question(num1, num2), answer(num1, num2)));
+
+export default () => gamePlay(description, randomOperation);
