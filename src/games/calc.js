@@ -2,29 +2,31 @@ import getRandomInt from '../getRandomInt';
 import { make } from '../makeConstructor';
 import gamePlay from '..';
 
-export const rules = 'What is the result of the expression?';
+export const description = 'What is the result of the expression?';
 
-export const operList = '+-*';
+export const operationsList = '+-*';
 
-export const choiseRandomFromList = (list = operList) => {
+export const choiseRandomFromList = (list = operationsList) => {
   const minOption = 0;
   const maxOption = list.length - 1;
-  const toTakeSymbol = getRandomInt(minOption, maxOption);
-  return list[toTakeSymbol];
+  return list[getRandomInt(minOption, maxOption)];
 };
 
-export const randomOperation = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25), oper =
-choiseRandomFromList()) => {
-  switch (oper) {
+export const question = (num1, num2, operation) => `${num1} ${operation} ${num2}`;
+export const answer = (num1, num2, operation) => {
+  switch (operation) {
     case '+':
-      return make(`${num1} + ${num2}`, num1 + num2);
+      return num1 + num2;
     case '-':
-      return make(`${num1} - ${num2}`, num1 - num2);
+      return num1 - num2;
     case '*':
-      return make(`${num1} * ${num2}`, num1 * num2);
+      return num1 * num2;
     default:
-      return 'somthing wrong';
+      return false;
   }
 };
 
-export default () => gamePlay(rules, randomOperation);
+export const randomOperation = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25), operation =
+choiseRandomFromList()) => make(question(num1, num2, operation), answer(num1, num2, operation));
+
+export default () => gamePlay(description, randomOperation);
