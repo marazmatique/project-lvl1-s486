@@ -1,5 +1,9 @@
 import readlineSync from 'readline-sync';
-import { expression, answer } from './makeConstructor';
+import {
+  car as expression,
+  cdr as answer,
+}
+  from '@hexlet/pairs';
 
 export default (description, randomOperation) => {
   const roundNumber = 3;

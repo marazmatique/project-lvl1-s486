@@ -1,5 +1,5 @@
+import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import { make } from '../makeConstructor';
 import gamePlay from '..';
 
 export const description = 'Find the greatest common divisor of given numbers.';

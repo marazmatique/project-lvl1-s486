@@ -1,5 +1,5 @@
+import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import { make } from '../makeConstructor';
 import gamePlay from '..';
 
 export const description = 'What is the result of the expression?';
