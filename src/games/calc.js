@@ -2,31 +2,33 @@ import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
 import gamePlay from '..';
 
-export const description = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-export const operationsList = '+-*';
-
-export const choiseRandomFromList = (list = operationsList) => {
+const operationsList = '+-*';
+const getRandomOperator = (list = operationsList) => {
   const minOption = 0;
   const maxOption = list.length - 1;
   return list[getRandomInt(minOption, maxOption)];
 };
 
-export const question = (num1, num2, operation) => `${num1} ${operation} ${num2}`;
-export const answer = (num1, num2, operation) => {
-  switch (operation) {
+const getRound = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25),
+  operator = getRandomOperator()) => {
+  const question = `${num1} ${operator} ${num2}`;
+  let answer;
+  switch (operator) {
     case '+':
-      return num1 + num2;
+      answer = num1 + num2;
+      break;
     case '-':
-      return num1 - num2;
+      answer = num1 - num2;
+      break;
     case '*':
-      return num1 * num2;
+      answer = num1 * num2;
+      break;
     default:
       return false;
   }
+  return make(question, answer);
 };
 
-export const randomOperation = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25), operation =
-choiseRandomFromList()) => make(question(num1, num2, operation), answer(num1, num2, operation));
-
-export default () => gamePlay(description, randomOperation);
+export default () => gamePlay(description, getRound);
