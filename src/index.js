@@ -1,18 +1,14 @@
 import readlineSync from 'readline-sync';
-import {
-  car as expression,
-  cdr as answer,
-}
-  from '@hexlet/pairs';
+import { car as expression, cdr as answer } from '@hexlet/pairs';
 
-export default (description, randomOperation) => {
+export default (description, getRound) => {
   const roundNumber = 3;
   console.log('\nWelcome to the Brain Games!');
   console.log(description);
   const userName = readlineSync.question('\nWhat is your name? ');
   console.log(`Hello, ${userName}!`);
   for (let i = 1; i <= roundNumber; i += 1) {
-    const round = randomOperation();
+    const round = getRound();
     console.log(`\nQuestion: ${expression(round)}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (`${answer(round)}` !== userAnswer) {
@@ -21,5 +17,5 @@ export default (description, randomOperation) => {
     }
     console.log('Correct!');
   }
-  return console.log(`\nCongratulation, ${userName}!\n`);
+   console.log(`\nCongratulation, ${userName}!\n`);
 };
