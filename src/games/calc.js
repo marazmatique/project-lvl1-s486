@@ -4,31 +4,36 @@ import playGame from '..';
 
 const description = 'What is the result of the expression?';
 
-const operationsList = '+-*';
-const getRandomOperator = (list = operationsList) => {
+const operations = '+-*';
+
+const getRandomOperator = () => {
   const minOption = 0;
-  const maxOption = list.length - 1;
-  return list[getRandomInt(minOption, maxOption)];
+  const maxOption = operations.length - 1;
+  return operations[getRandomInt(minOption, maxOption)];
 };
 
-const getRound = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25),
-  operator = getRandomOperator()) => {
-  const question = `${num1} ${operator} ${num2}`;
-  let answer;
+const getAnswer = (num1, num2, operator) => {
   switch (operator) {
     case '+':
-      answer = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      answer = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      answer = num1 * num2;
-      break;
+      return num1 * num2;
     default:
       return false;
   }
+};
+
+const getRoundData = () => {
+  const num1 = getRandomInt(1, 25);
+  const num2 = getRandomInt(1, 25);
+  const operator = getRandomOperator();
+
+  const question = `${num1} ${operator} ${num2}`;
+  const answer = getAnswer(num1, num2, operator);
+
   return make(question, answer);
 };
 
-export default () => playGame(description, getRound);
+export default () => playGame(description, getRoundData);
