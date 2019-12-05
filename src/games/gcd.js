@@ -1,6 +1,6 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import gamePlay from '..';
+import playGame from '..';
 import isDivided from '../modulo';
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -16,4 +16,4 @@ const getRound = (num1 = getRandomInt(1, 100), num2 = getRandomInt(1, 100)) => {
   return make(question, answer);
 };
 
-export default () => gamePlay(description, getRound);
+export default () => playGame(description, getRound);

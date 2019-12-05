@@ -1,6 +1,6 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import gamePlay from '..';
+import playGame from '..';
 import isDivided from '../modulo';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -19,4 +19,4 @@ const getRound = (num = getRandomInt(1, 100)) => {
   return make(question, answer);
 };
 
-export default () => gamePlay(description, getRound);
+export default () => playGame(description, getRound);

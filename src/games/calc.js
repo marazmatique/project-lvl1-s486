@@ -1,6 +1,6 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import gamePlay from '..';
+import playGame from '..';
 
 const description = 'What is the result of the expression?';
 
@@ -31,4 +31,4 @@ const getRound = (num1 = getRandomInt(1, 25), num2 = getRandomInt(1, 25),
   return make(question, answer);
 };
 
-export default () => gamePlay(description, getRound);
+export default () => playGame(description, getRound);

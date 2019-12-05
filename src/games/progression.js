@@ -1,6 +1,6 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
-import gamePlay from '..';
+import playGame from '..';
 
 const description = 'What number is missing in the progression?';
 
@@ -21,4 +21,4 @@ const getRound = (start = getRandomInt(1, 20), step = getRandomInt(1, 5)) => {
   return make(sequence, answer);
 };
 
-export default () => gamePlay(description, getRound);
+export default () => playGame(description, getRound);
