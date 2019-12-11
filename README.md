@@ -1,7 +1,7 @@
 # project-lvl1-s486
-<a href="https://codeclimate.com/github/marazmatique/project-lvl1-s486/maintainability"><img src="https://api.codeclimate.com/v1/badges/90a359c7ecb6c2bde7ef/maintainability" /></a>
-<a href="https://codeclimate.com/github/marazmatique/project-lvl1-s486/test_coverage"><img src="https://api.codeclimate.com/v1/badges/90a359c7ecb6c2bde7ef/test_coverage" /></a>
-<a href="https://travis-ci.com/marazmatique/project-lvl1-s486"><img src="https://travis-ci.com/marazmatique/project-lvl1-s486.svg?branch=master"></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/90a359c7ecb6c2bde7ef/maintainability)](https://codeclimate.com/github/marazmatique/project-lvl1-s486/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/90a359c7ecb6c2bde7ef/test_coverage)](https://codeclimate.com/github/marazmatique/project-lvl1-s486/test_coverage)
+[![Build Status](https://travis-ci.com/marazmatique/project-lvl1-s486.svg?branch=master)](https://travis-ci.com/marazmatique/project-lvl1-s486)
 
 **How to install from npm (npm install marazmatique).**
 _Use sudo if you have err permission denied._
