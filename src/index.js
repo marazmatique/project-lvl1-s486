@@ -1,30 +1,28 @@
 import readlineSync from 'readline-sync';
-import { car as expression, cdr as answer } from '@hexlet/pairs';
+import { car, cdr } from '@hexlet/pairs';
 
-const nRound = 3;
+const roundsCount = 3;
 
 export default (description, getRoundData) => {
   console.log('\nWelcome to the Brain Games!');
   console.log(description);
   const userName = readlineSync.question('\nWhat is your name? ');
   console.log(`Hello, ${userName}!`);
+  let gameEndMessage = `\nCongratulation, ${userName}!\n`;
 
-  for (let i = nRound; i > 0; i -= 1) {
+  for (let i = roundsCount; i > 0; i -= 1) {
     const round = getRoundData();
-    console.log(`\nQuestion: ${expression(round)}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    switch (true) {
-      case `${answer(round)}` !== userAnswer:
-        console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer(round)}'.
-        \nLet's try again, ${userName}!\n`);
-        i = 0;
-        break;
-      case i === 1:
-        console.log(`Correct!\n\nCongratulation, ${userName}!\n`);
-        i = 0;
-        break;
-      default:
-        console.log('Correct!');
+    const expression = car(round);
+    const answer = cdr(round);
+    const userAnswer = readlineSync.question(`\nQuestion: ${expression}\nYour answer: `);
+
+    if (answer === userAnswer) {
+      console.log('Correct!');
+    } else {
+      gameEndMessage = `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
+      \nLet's try again, ${userName}!\n`;
+      break;
     }
   }
+  console.log(gameEndMessage);
 };
