@@ -11,7 +11,7 @@ const isPrime = (num) => {
       return false;
     }
   }
-  return true;
+  return num > 1;
 };
 
 const getRoundData = () => {
