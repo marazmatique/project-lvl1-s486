@@ -9,7 +9,7 @@ const lengthSequence = 10;
 const getRoundData = () => {
   const start = getRandomInt(1, 20);
   const step = getRandomInt(1, 5);
-  const randomSecretPosition = getRandomInt(0, lengthSequence);
+  const randomSecretPosition = getRandomInt(0, lengthSequence - 1);
   let sequence = '';
   const answer = start + step * randomSecretPosition;
 
