@@ -6,12 +6,17 @@ import isDivided from '../modulo';
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
+  if (num <= 1) {
+    return false;
+  }
+
   for (let denom = 2; denom <= Math.sqrt(num); denom += 1) {
     if (isDivided(num, denom)) {
       return false;
     }
   }
-  return num > 1;
+
+  return true;
 };
 
 const getRoundData = () => {
