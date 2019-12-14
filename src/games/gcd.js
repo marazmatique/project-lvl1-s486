@@ -15,7 +15,7 @@ const findGcd = (num1, num2) => {
 
 const getRoundData = (num1 = getRandomInt(1, 100), num2 = getRandomInt(1, 100)) => {
   const question = `${num1} ${num2}`;
-  const answer = findGcd(num1, num2);
+  const answer = `${findGcd(num1, num2)}`;
 
   return make(question, answer);
 };
