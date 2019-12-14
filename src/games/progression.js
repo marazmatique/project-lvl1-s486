@@ -10,12 +10,13 @@ const getRoundData = () => {
   const start = getRandomInt(1, 20);
   const step = getRandomInt(1, 5);
   const randomSecretPosition = getRandomInt(0, lengthSequence - 1);
-  let sequence = '';
-  const answer = start + step * randomSecretPosition;
+
+  let sequence;
+  const answer = `${start + step * randomSecretPosition}`;
 
   for (let i = 0; i < lengthSequence; i += 1) {
     const nextElement = i === randomSecretPosition ? '..' : start + step * i;
-    sequence = `${sequence} ${nextElement}`;
+    sequence = i === 0 ? `${nextElement}` : `${sequence} ${nextElement}`;
   }
 
   return make(sequence, answer);
