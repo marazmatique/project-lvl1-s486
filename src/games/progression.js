@@ -13,14 +13,15 @@ const getRoundData = () => {
   const step = getRandomInt(1, 5);
   const randomSecretPosition = getRandomInt(0, lengthSequence - 1);
 
-  let sequence = `${getElement(start, step, 0)}`; // take the first number for the sequence
+  let sequence = '';
   const answer = `${getElement(start, step, randomSecretPosition)}`;
 
-  for (let i = 1; i < lengthSequence; i += 1) {
+  for (let i = 0; i < lengthSequence; i += 1) {
     const nextElement = i === randomSecretPosition ? '..' : getElement(start, step, i);
     sequence = `${sequence} ${nextElement}`;
-    // take the rest of the numbers for the sequence (so the cycle starts at index 1, not 0)
   }
+
+  sequence = sequence.trim();
 
   return make(sequence, answer);
 };
