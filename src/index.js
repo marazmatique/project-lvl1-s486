@@ -20,9 +20,10 @@ export default (description, getRoundData) => {
     if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
       \nLet's try again, ${userName}!\n`);
-      break;
+      return;
     }
-
-    console.log(i > 1 ? 'Correct!' : `Correct!\n\nCongratulation, ${userName}!\n`);
+    console.log('Correct!');
   }
+
+  console.log(`\nCongratulation, ${userName}!\n`);
 };
