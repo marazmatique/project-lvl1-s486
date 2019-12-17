@@ -11,15 +11,15 @@ export default (description, getRoundData) => {
 
   for (let i = roundsCount; i > 0; i -= 1) {
     const round = getRoundData();
-    const expression = car(round);
+    const roundQuestion = car(round);
     const answer = cdr(round);
 
-    console.log(`\nQuestion: ${expression}`);
+    console.log(`\nQuestion: ${roundQuestion}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (answer !== userAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
-      \nLet's try again, ${userName}!\n`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+      console.log(`\nLet's try again, ${userName}!\n`);
       return;
     }
     console.log('Correct!');
