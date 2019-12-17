@@ -1,9 +1,10 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
 import playGame from '..';
-import isDivided from '../modulo';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+const isDivided = (num, denominator) => num % denominator === 0;
 
 const isPrime = (num) => {
   if (num <= 1) {

@@ -1,9 +1,10 @@
 import { cons as make } from '@hexlet/pairs';
 import getRandomInt from '../getRandomInt';
 import playGame from '..';
-import isDivided from '../modulo';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
+
+const isDivided = (num, denominator) => num % denominator === 0;
 
 const getRoundData = () => {
   const question = getRandomInt(1, 100);
