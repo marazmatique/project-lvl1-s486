@@ -7,9 +7,7 @@
     "Brain",
     "Game"
   ],
-  "main": "dist/index.js",
   "scripts": {
-    "test": "jest",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
@@ -32,8 +30,7 @@
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.0.3"
+    "eslint-plugin-import": "^2.18.2"
   },
   "files": [
     "dist"
