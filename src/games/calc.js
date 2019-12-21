@@ -31,7 +31,7 @@ const getRoundData = () => {
   const operator = getRandomOperator();
 
   const question = `${num1} ${operator} ${num2}`;
-  const answer = `${getAnswer(num1, num2, operator)}`;
+  const answer = getAnswer(num1, num2, operator).toString();
 
   return make(question, answer);
 };
