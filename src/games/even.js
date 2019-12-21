@@ -4,11 +4,11 @@ import playGame from '..';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
-const isDivided = (num, denominator) => num % denominator === 0;
+const isEven = (num) => num % 2 === 0;
 
 const getRoundData = () => {
   const question = getRandomInt(1, 100);
-  const answer = isDivided(question, 2) ? 'yes' : 'no';
+  const answer = isEven(question) ? 'yes' : 'no';
 
   return make(question, answer);
 };
