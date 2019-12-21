@@ -1,9 +1,7 @@
 env:
-  jest: true
   node: true
 extends:
   - 'airbnb-base'
-  - 'plugin:jest/recommended'
 globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
@@ -12,5 +10,4 @@ parser:
 rules:
   no-console: 0
 plugins:
-  - jest
   - babel
