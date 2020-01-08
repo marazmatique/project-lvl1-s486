@@ -32,6 +32,10 @@
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2"
   },
+  "dependencies": {
+    "@hexlet/pairs": "^1.0.10",
+    "readline-sync": "^1.4.10"
+  },
   "files": [
     "dist"
   ],
@@ -41,9 +45,5 @@
     "brain-gcd": "dist/bin/brain-games-gcd.js",
     "brain-calc": "dist/bin/brain-games-calc.js",
     "brain-even": "dist/bin/brain-games-even.js"
-  },
-  "dependencies": {
-    "@hexlet/pairs": "^1.0.10",
-    "readline-sync": "^1.4.10"
   }
 }
